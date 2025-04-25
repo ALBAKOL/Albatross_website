@@ -2,16 +2,14 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: white; 
+  background: white;
   color: #333;
   text-align: center;
 }
 
-
 header {
   background: #b30000;
   color: white;
-  text-align: center;
   padding: 20px;
 }
 
@@ -19,28 +17,23 @@ header {
   height: 80px;
 }
 
-
 nav {
   background: #b30000;
   padding: 10px;
-  text-align: center;
 }
 
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+}
+
+section {
+  padding: 50px 20px;
   text-align: center;
 }
 
-
-section {
-  padding: 20px;
-  text-align: center; 
-}
-
-
-.Team-Photo 
+.Team-Photo {
   width: 100%;
   max-width: 200px;
   height: auto;
@@ -49,32 +42,32 @@ section {
   display: block;
 }
 
-
 .slider {
-  width: 60%; /* Adjusted width for better appearance */
+  width: 90%;
+  max-width: 1000px;
   overflow: hidden;
-  margin: 20px auto;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .slides {
   display: flex;
-  width: 300%;
-  animation: slide 20s infinite;
+  animation: slide 30s linear infinite;
+  width: fit-content;
 }
 
 .slides img {
-  width: 10%;
-  flex-shrink: 0;
+  width: 200px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 10px;
 }
-
 
 @keyframes slide {
-  0% { transform: translateX(0%); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
-
 
 form input,
 form textarea {
@@ -89,8 +82,8 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
-
 
 footer {
   background: #b30000;
@@ -99,46 +92,9 @@ footer {
   padding: 10px;
   margin-top: 30px;
 }
-
 
 h1, h2, h3 {
   font-family: 'Arial', sans-serif;
-  text-align: center;
   margin: 20px 0;
   color: #333;
-}
-
-
-section {
-  padding: 50px 20px;
-}
-
-@keyframes slide {
-  0% { transform: translateX(0%); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0%); }
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #b30000;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  background: #b30000;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 30px;
 }
