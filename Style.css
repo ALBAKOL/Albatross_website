@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   background: #fff;
-  text-align: center;
   color: #333;
 }
 
@@ -39,7 +38,6 @@ section {
   width: 300px;
   border-radius: 10px;
   display: block;
-  position: center;
   margin: 15px auto;
 }
 
