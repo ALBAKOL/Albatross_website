@@ -1,15 +1,17 @@
+﻿/* General Layout */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: white;
+  background: #fff;
   color: #333;
-  text-align: center;
 }
 
+/* Header */
 header {
   background: #b30000;
   color: white;
+  text-align: center;
   padding: 20px;
 }
 
@@ -17,9 +19,11 @@ header {
   height: 80px;
 }
 
+/* Navigation */
 nav {
-  background: #b30000;
+  background: #222;
   padding: 10px;
+  text-align: center;
 }
 
 nav a {
@@ -28,73 +32,60 @@ nav a {
   text-decoration: none;
 }
 
+/* Sections */
 section {
-  padding: 50px 20px;
+  padding: 20px;
   text-align: center;
 }
 
-.Team-Photo {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+/* About Us Image */
+.about-img {
+  width: 300px;
   border-radius: 10px;
-  margin: 10px auto 0;
   display: block;
+  margin: 15px auto;
 }
 
+/* Product Slider */
 .slider {
+  position: relative;
   width: 90%;
-  max-width: 1000px;
+  margin: auto;
   overflow: hidden;
-  margin: 30px auto;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .slides {
   display: flex;
-  animation: slide 30s linear infinite;
-  width: fit-content;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slides img {
-  width: 200px;
+  width: 300px;
   height: auto;
-  margin: 0 10px;
   border-radius: 10px;
+  margin: 5px;
 }
 
-@keyframes slide {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-form input,
-form textarea {
-  width: 100%;
+/* Inquiry Form */
+form input, form textarea {
+  width: 80%;
   padding: 10px;
   margin: 10px 0;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #b30000;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-footer {
   background: #b30000;
   color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
-h1, h2, h3 {
-  font-family: 'Arial', sans-serif;
-  margin: 20px 0;
-  color: #333;
-}﻿
+/* Footer */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}

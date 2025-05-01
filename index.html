@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <img src="logo.png" alt="Albatross Logo" class="logo" />
     <h1>ALBATROSS</h1>
@@ -18,9 +17,9 @@
     <a href="#about">About</a>
     <a href="#management">Management</a>
     <a href="#products">Products</a>
+    <a href="#clients">Clients</a>
     <a href="#inquiry">Inquiry</a>
     <a href="#contact">Contact</a>
-    <a href="#clients">Clients</a>
   </nav>
 
   <section id="about">
@@ -31,26 +30,21 @@
       and has since diversified into construction materials and their own line of wiremesh and allied products.
       Our core principles—integrity, honesty, and loyalty—guide every client relationship.
     </p>
-    <img src="Team Photo.jpg" alt="Team Photo" class="Team-Photo"/>
+    <img src="team-photo.jpg" alt="Founders" class="about-img"/>
   </section>
 
   <section id="management">
     <h2>Management Structure</h2>
     <p>
       <strong>Founder:</strong> Mr. Samar Ganguly<br/>
-      <strong>Proprietor:</strong> Mrs. Biswarupa Ganguly<br/>
-      <strong>Manager and foreign liason:</strong> Mrs. Susnata Ganguly<br/>
-      <strong>Logistics:</strong> Mr. Prantik Chakraborty (HNS service)<br/> 
-      <strong>Accounts & Legal:</strong> Mr. Bhupen Sarkar<br/> 
-      <strong>Departments:</strong> Export, Sourcing, Logistics, Client Relations, Service 
+      <strong>Proprietor:</strong> Mrs. Biswarupa Ganguly
     </p>
   </section>
 
   <section id="products">
-    <h2>Snippet of Some Products We Deal In</h2>
+    <h2>Our Products</h2>
     <div class="slider">
       <div class="slides">
-        <!-- Make sure these image files exist and are correctly named -->
         <img src="product1.jpg.jpeg" alt="Product 1">
         <img src="product2.jpg.jpeg" alt="Product 2">
         <img src="product3.jpg.jpeg" alt="Product 3">
@@ -61,9 +55,27 @@
         <img src="product8.jpg.jpeg" alt="Product 8">
         <img src="product9.jpg.jpeg" alt="Product 9">
         <img src="product10.jpg.jpeg" alt="Product 10">
-        <!-- Add more images if needed -->
+        <img src="product11.jpg.jpeg" alt="Product 11">
+        <img src="product12.jpg.jpeg" alt="Product 12">
+        <img src="product13.jpg.jpeg" alt="Product 13">
+        <img src="product14.jpg.jpeg" alt="Product 14">
+        <img src="product15.jpg.jpeg" alt="Product 15">
+        <img src="product16.jpg.jpeg" alt="Product 16">
+        <img src="product17.jpg.jpeg" alt="Product 17">
       </div>
     </div>
+  </section>
+
+  <section id="clients">
+    <h2>Our Clients</h2>
+    <ul>
+      <li>AGRANI ENTERPRISE, Bangladesh</li>
+      <li>M/s. Md. Saiful Islam, Bangladesh</li>
+      <li>Monico LTD., Bangladesh</li>
+      <li>Spectra Engineers LTD., Bangladesh</li>
+      <li>TAHER BROTHERS LTD., Bangladesh</li>
+      <li>Mifra International, Myanmar</li>
+    </ul>
   </section>
 
   <section id="inquiry">
@@ -84,21 +96,23 @@
     <p><a href="ALBATROSS BUSINESS PROFILE.pdf" download>Download Company Profile</a></p>
   </section>
 
-  <section id="clients">
-    <h2>Our Clientele</h2>
-    <ul>
-      <li>AGRANI ENTERPRISE, Bangladesh</li>
-      <li>M/s. Md. Saiful Islam, Bangladesh</li>
-      <li>Monico LTD., Bangladesh</li>
-      <li>Spectra Engineers LTD., Bangladesh</li>
-      <li>TAHER BROTHERS LTD., Bangladesh</li>
-      <li>Mifra International, Myanmar</li>
-    </ul>
-  </section>
-
   <footer>
     &copy; 2025 ALBATROSS. All rights reserved.
   </footer>
 
+  <!-- Slider JavaScript -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+
+    function showSlides() {
+      slideIndex++;
+      if (slideIndex >= totalSlides) { slideIndex = 0; }
+      slides.style.transform = 'translateX(' + (-slideIndex * 310) + 'px)';
+    }
+
+    setInterval(showSlides, 2000);
+  </script>
 </body>
-</html>﻿
+</html>
