@@ -1,5 +1,4 @@
-﻿/* General Layout */
-body {
+﻿body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@ body {
   color: #333;
 }
 
-/* Header */
 header {
   background: #b30000;
   color: white;
@@ -19,7 +17,6 @@ header {
   height: 80px;
 }
 
-/* Navigation */
 nav {
   background: #222;
   padding: 10px;
@@ -32,13 +29,11 @@ nav a {
   text-decoration: none;
 }
 
-/* Sections */
 section {
   padding: 20px;
   text-align: center;
 }
 
-/* About Us Image */
 .about-img {
   width: 300px;
   border-radius: 10px;
@@ -46,7 +41,6 @@ section {
   margin: 15px auto;
 }
 
-/* Product Slider */
 .slider {
   position: relative;
   width: 90%;
@@ -67,7 +61,6 @@ section {
   margin: 5px;
 }
 
-/* Inquiry Form */
 form input, form textarea {
   width: 80%;
   padding: 10px;
@@ -82,7 +75,6 @@ button {
   cursor: pointer;
 }
 
-/* Footer */
 footer {
   background: #eee;
   text-align: center;
